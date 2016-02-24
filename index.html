@@ -12,11 +12,10 @@
     <li role="presentation"><a href="/#/goodbye">Goodbye</a></li>
   </ul>
   <h1>{{zenData}}</h1>
-  <div ng-show="showComments" ng-repeat="comment in site.comments">
-
-  <!-- <div ng-repeat title in itunesData.data.results>
-    <h5>title.trackName</h5>
-  </div> -->
+  <div ng-repeat = "title in itunesData">
+    <!-- <h5>{{title}}</h5> -->
+    <h5>{{title.trackName}}</h5>
+  </div>
   <div ng-view></div>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
   <!-- <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script> -->
