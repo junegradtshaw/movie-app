@@ -1,0 +1,27 @@
+body {
+  /*padding: 10px;*/
+  height: 100vh;
+  /*width: 100vw;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+}
+
+form * {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ng-invalid.ng-dirty{
+   border-color: #FA787E ;
+}
+
+.ng-valid.ng-dirty{
+   border-color: #78FA89 ;
+}

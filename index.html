@@ -3,19 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <title>My Angular Demo</title>
+  <link rel="stylesheet" href="css/main.css">
+  <title>Angular OMDb API Search</title>
 </head>
-<body ng-controller="MainController">
-  <ul class="nav nav-pills">
+<body ng-controller="MainController" ng-cloak>
+  <h1>{{title}}</h1>
+  <form id="searchForm">
+    <label for="id=searchTitle">Enter a movie by title.</label>
+    <input type="text" id="searchTitle" required ng-model="searchTitle">
+    <button type="submit" ng-click="searchMovie(this)" ng-disabled="searchForm.$invalid">Search!</button>
+  </form>
+
+
+  <!-- <ul class="nav nav-pills">
     <li role="presentation" class="active"><a href="/#/">Home</a></li>
     <li role="presentation"><a href="/#/hello">Hello</a></li>
     <li role="presentation"><a href="/#/goodbye">Goodbye</a></li>
-  </ul>
-  <h1>{{zenData}}</h1>
-  <div ng-repeat = "title in itunesData">
+  </ul> -->
+  <!-- <h1>{{zenData}}</h1> -->
+  <!-- <div ng-repeat = "title in itunesData"> -->
     <!-- <h5>{{title}}</h5> -->
-    <h5>{{title.trackName}}</h5>
-  </div>
+    <!-- <h5>{{title.trackName}}</h5> -->
+  <!-- </div> -->
   <div ng-view></div>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
   <!-- <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script> -->
