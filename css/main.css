@@ -18,6 +18,42 @@ form * {
   margin-bottom: 10px;
 }
 
+button {
+  background-color: #2585D1;
+}
+
+.flex-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  /*background: tomato;*/
+  padding: 5px;
+  width: 40%;
+}
+
+.movie-item {
+  margin: 10px;
+  border: solid 3px black;
+  color: #2585D1;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .ng-invalid.ng-dirty{
    border-color: #FA787E ;
 }

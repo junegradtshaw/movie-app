@@ -1,12 +1,16 @@
 app.controller('MainController', ['$scope', '$http', function($scope, $http) {
   $scope.title = "Angular OMDb API Search"
   $scope.searchTitle="";
+  $scope.movies=[];
 
   $scope.searchMovie = function(movie) {
     console.log(movie);
-    console.log('movie title: ',movie.title);
     $http.get('http://www.omdbapi.com/?s='+movie.searchTitle).then(function(data){
-      console.log('movie data: ', data);
+      // console.log('movie data: ', data);
+      // movieData = data;
+      $scope.movies = data.data.Search;
+      console.log($scope.movies);
+      return;
     })
   }
   // $http.get('https://api.github.com/zen').then(function(data){
