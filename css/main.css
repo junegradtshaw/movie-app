@@ -5,7 +5,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-h1 {
+h1, h2 {
   width: 100%;
   text-align: center;
 }
@@ -20,6 +20,14 @@ form * {
 
 button {
   background-color: #2585D1;
+  color: white;
+  line-height:30px;
+  height: 30px;
+  padding: 0px;
+}
+
+a * {
+  text-decoration: none;
 }
 
 .flex-container {
@@ -38,16 +46,37 @@ button {
   justify-content: space-around;
 }
 
-.flex-item {
-  /*background: tomato;*/
+.flex-1-2 {
   padding: 5px;
   width: 40%;
+}
+
+.flex-1-3 {
+  padding: 5px;
+  width: 30%;
+}
+
+.flex-2-3 {
+  padding: 5px;
+  width: 60%;
 }
 
 .movie-item {
   margin: 10px;
   border: solid 3px black;
   color: #2585D1;
+}
+
+.movie-image-side {
+  display: inline-block;
+}
+
+.movie-description-side {
+  display: inline-block;
+}
+
+.movie-full {
+  border: solid 1px black;
 }
 
 .text-center {
