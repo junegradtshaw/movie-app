@@ -18,6 +18,10 @@ form * {
   margin-bottom: 10px;
 }
 
+label {
+  display: block;
+}
+
 button {
   background-color: #2585D1;
   color: white;
