@@ -24,9 +24,9 @@
     <label for="id=searchTitle">Enter a movie by title.</label>
     <input type="text" id="searchTitle" required ng-model="searchTitle">
     <a href="/{{searchTitle}}/search">
-      <button type="submit" ng-disabled="searchForm.$invalid">Search! <i class="fa fa-arrow-right"></i><
-      <button type="submit" ng-disabled="searchForm.$invalid">Search! <i class="fa fa-arrow-right"></i><
-</button>
+      <button type="submit" ng-disabled="searchForm.$invalid">Search!</button>
+      <!-- <button type="submit" ng-disabled="searchForm.$invalid">Search! <i class="fa fa-arrow-right"> after</i>< -->
+
     </a>
   </form>
   <div ng-view></div>
