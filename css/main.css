@@ -23,15 +23,21 @@ label {
   display: block;
 }
 
+.glyphicon-arrow-right .glyphicon {
+  color: white;
+  display: inline;
+}
+
 button {
   background-color: #2585D1;
   color: white;
   line-height:30px;
   height: 30px;
   padding: 0px;
+
 }
 
-a * {
+a>* {
   text-decoration: none;
 }
 

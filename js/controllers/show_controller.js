@@ -1,9 +1,10 @@
-app.controller('ShowController', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
+app.controller('ShowController', ['$scope', '$routeParams', 'MyMovie', function($scope, $routeParams, MyMovie) {
 
-  // $scope.movieID = $routeParams.movieID;
+  $scope.movieID = $routeParams.movieID;
   $scope.movie;
 
-  $http.get('http://www.omdbapi.com/?i='+$routeParams.movieID).then(function(data){
+  // $scope.movie=
+  MyMovie.getter($scope.movieID).then(function(data) {
     $scope.movie = data.data;
   })
 }])
